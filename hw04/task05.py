@@ -8,7 +8,7 @@ from sys import argv
 
 
 def main(*args):
-    print(f"Generated value: {reduce(lambda x, y: x * y, [i for i in range(100, 1001)])}")
+    print(f"Generated value: {reduce(lambda x, y: x * y, [i for i in range(100, 1001) if i % 2 == 0])}")
 
 
 if __name__ == '__main__':

@@ -21,7 +21,7 @@ def main():
             for line in f_obj:
                 subject_info = line.split()
 
-                subject_name = subject_info[0].split(':')[0]
+                subject_name = subject_info[0].rstrip(':')
                 hours = map(lambda s: s.split('(')[0], subject_info[1:])
 
                 try:

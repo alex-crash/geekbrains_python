@@ -6,7 +6,7 @@ from sys import argv
 
 
 def main(*args):
-    print(f"Generated list: {[i for i in range(20, 241) if i % 20 == 0 or i % 21 == 0]}")
+    print(f"Generated list: {[i for i in range(20, 240) if i % 20 == 0 or i % 21 == 0]}")
 
 
 if __name__ == '__main__':
